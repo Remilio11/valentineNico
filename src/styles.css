@@ -1,0 +1,64 @@
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./img/background.jpg'); /* Asegúrate de poner la ruta correcta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija cuando se hace scroll */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.buttons {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button#no {
+    background-color: #e74c3c;
+    color: white;
+}
+
+button#si {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.gif-container {
+    display: flex;
+    align-content: center;
+    width: 250px;
+    height: 250px;
+}
+
+#respuesta {
+    font-size: 3em;
+    margin-top: 20px;
+}

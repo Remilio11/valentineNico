@@ -1,0 +1,19 @@
+<div class="container">
+    <h1 class="animate__animated animate__swing" *ngIf="textoVisible">¿Quieres ser mi Valentín?</h1>
+    <div class="buttons" *ngIf="botonVisible">
+      <button id="no" (click)="responderNo()">No</button>
+      <button id="si" (click)="responderSi()">Sí</button>
+    </div>
+
+    <!-- Respuesta que aparece después de hacer clic -->
+    <p class="animate__animated animate__swing animate__zoomIn" >{{ respuesta }}</p>
+  
+    <!-- GIF que aparece al inicio -->
+    <div *ngIf="mostrarGif" class="gif-container">
+        <img [src]="gifUrl" alt="gif" />
+        <a href="https://remilio11.github.io/tarjetaNico/" target="_blank">
+          <img [src]="gifUrl2" alt="" />
+        </a>
+    </div>
+  </div>
+  
